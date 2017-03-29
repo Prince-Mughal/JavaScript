@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Javascript </title>
+            <script type="text/javascript">
+
+
+                    /* Print Counting */
+                document.write("<h3> Counting:  </h3>");
+                for(i = 1; i <= 10; i++){
+                        /* Print Counting... */
+                    document.write(i);
+                        /* Print Space, You may use <br> for NEWLINE */ 
+                    document.write(" ");
+                    } 
+
+
+                    /* Print Counting in Reverse Order */
+                document.write("<h3> Reverse Counting: </h3>");
+                for(i = 10; i >= 1; i--){
+                        /* Print Counting... */
+                    document.write(i);
+                        /* Print <br> for NEWLINE */ 
+                    document.write("<br>");
+                    } 
+
+
+                    /* Take Input from User */
+                var table = prompt("Enter Table Name: ");
+                    /* Print Table */
+                document.write("<h3>Table of "+ table +": </h3>");
+                    /* Print <br> for NEWLINE */ 
+                document.write("<br>");
+                for(i = 1; i <= 10; i++){
+                        /* Print Table Line, Format 2 x 1 = 2 */
+                    document.write(table+" X "+i+" = "+(i*table));
+                        /* Print <br> for NEWLINE */ 
+                    document.write("<br>");
+               }
+
+
+                   /* Print Full Name */
+               document.write("<h3> Name: </h3>");
+               var fname = "Prince"; /* First Name */
+               var lname = "Mughal"; /* Last Name */
+               var fullName = fname+" "+lname; /* Combine First and Last Name */
+               document.write(fullName); /* Print Name */
+               document.write("<br>");
+
+
+                   /* Print Full Name Take Name From User */
+               document.write("<h3> Name: </h3>");
+                   fname = prompt("Enter First Name: "); /* First Name */
+                   lname = prompt("Enter Last Name: "); /* Last Name */
+                   fullName = fname+" "+lname; /* Combine First and Last Name */
+               document.write(fullName); /* Print Name */
+               document.write("<br>");
+
+
+                 /* Is Number Positive or Negative  */
+
+               var num = prompt("Enter a Number: "); /* Take Input*/
+               if(num < 0){
+                   alert("Number is Negative.");}
+               else{
+                   alert("Number is Positive.");}
+                   
+                /* Calculate Factorial */
+
+                    /* parseInt() will convert String to Integer */
+                var n = parseInt(prompt("Enter Number to Find Factorial: "));
+                var factorial = 1;
+                for(i = n; i >= 1; i--){
+                    factorial = factorial * i;
+
+               }
+                        /* Print Result */
+                    alert("Factorial: "+factorial);
+
+
+
+
+                /* Function in JavaScript */
+               function add(){
+                     var num1 = parseInt(prompt("Enter First Number: "));
+                     var num2 = parseInt(prompt("Enter Second Number: "));
+                     var sum  = num1 + num2;
+                     alert("Ans: "+sum);}
+
+
+            </script>
+        </head>
+        <body>
+                <strong><p> Click on the Button to Calculate </p> </strong>
+                <input type="button" value="Addition" onclick="add()" >
+
+              
+        </body>
+    </html>
